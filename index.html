@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Minha Vida</title>
+    <link rel="stylesheet" href="love.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#momentos">Desejos</a></li>
+            <li><a href="#mensagem">Deixe uma Mensagem</a></li>
+        </ul>
+    </nav>
+
+    <!-- Imagem central de capa (banner) -->
+    <div class="banner">
+        <img src="./img/love.jpg" alt="Nós Dois" />
+    </div>
+
+    <h1>Para Você Meu Amor ❤️🤎</h1>
+
+    <!-- Seção sobre o casal -->
+    <section id="sobre-nos">
+        <h3>Nossa História</h3>
+        <p>
+            Desde o dia em que nossos caminhos se cruzaram, minha vida se encheu de luz. Cada momento ao seu lado é uma aventura cheia de risos, carinho e sonhos. 
+            <br><br>
+            Eu te amo mais do que as palavras podem expressar, e este site é só uma forma de dizer o quanto você é especial para mim.
+        </p>
+    </section>
+
+    <!-- Seção de momentos especiais -->
+    <section id="momentos">
+        <h3>Desejos com você</h3>
+        <div class="momentos-galeria">
+            <div class="momentos-item">
+                <h4>Praia</h4>
+                <img src="img/bomb1.jpg" alt="Momento Especial">
+                <p>Descrição do momento 1 com um texto bem fofo e cheio de carinho.</p>
+            </div>
+            <div class="momentos-item">
+                <h4>Animes</h4>
+                <img src="img/bomb2.jpg" alt="Outro Momento Especial">
+                <p>Descrição do momento 2 com um texto super romântico.</p>
+            </div>
+            <div class="momentos-item">
+                <h4>Casamento na Praia</h4>
+                <img src="img/bomb3.jpg" alt="Mais um Momento Especial">
+                <p>Descrição do momento 3 e todas as emoções que ele traz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário para mensagens -->
+    <section id="mensagem">
+        <h3>Deixe Sua Mensagem para Mim</h3>
+        <form action="enviar-mensagem.php" method="POST">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome...">
+
+            <label for="tema">Como você está se sentindo? 💖</label>
+            <select id="tema" name="tema">
+                <option value="apaixonado">Apaixonado</option>
+                <option value="grato">Grato</option>
+                <option value="feliz">Feliz</option>
+                <option value="reflexivo">Reflexivo</option>
+                <option value="amando_tilapia">Amando mais ainda minha tilápia</option> <!-- Opção personalizada -->
+            </select>
+
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva aqui o que você quer me dizer..."></textarea>
+
+            <button type="submit">Enviar Mensagem 💌</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Com muito amor, te amo muito meu bebê. 💕</p>
+    </footer>
+</body>
+</html>
